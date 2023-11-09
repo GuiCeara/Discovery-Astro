@@ -160,14 +160,29 @@ header #logo {
   font-weight: bold;
 }
 
+#container-welcome i {
+   font-size: 55px;
+   position: absolute;
+}
+
+#container-welcome #arrow-next {
+   right: 0;
+}
+
+#container-welcome #arrow-previous {
+   left: 0;
+   transform: rotate(180deg);
+}
+
 /* Conteúdo do site */
 
 #container-inicialize {
    position: relative;
    display: flex;
    margin-top: 10px;
+   margin-bottom: 10px;
    width: 76%;
-   height: 625px;
+   height: 675px;
    transform: translate(-50%);
    background-color: rgba(255, 255, 255, 0.144);
    border-radius: 10px;
@@ -217,7 +232,7 @@ header #logo {
    display: block;
    width: 250px;
    height: 50px;
-   margin-bottom: 40px;
+   margin-bottom: 25px;
    line-height: 50px;
    font-weight: bold;
    text-decoration: none;
