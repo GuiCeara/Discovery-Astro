@@ -1,42 +1,98 @@
 <!DOCTYPE html>
 <html lang="PT-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./CSS/main.css">
-  <title>Descovery Astro</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
-</head>
-<body>
-
-  <header id="nav-bar" class="flex">
-
-    <article id="logo">
-      <!-- <img src="public/img/logo.png" alt="Discovery Astro - Logo"> -->
-    </article>
-
-    <article id="buttons-nav">
-      <p>Início</p>
-      <p>Biblioteca</p>
-      <p>Sobre nós</p>
-    </article>
-
-    <article>
-      <!-- <p>Entrar</p>
-      <i class="fa-solid fa-user"></i> -->
-    </article>
-  </header>
-
-  <main id="container-inicialize">
-      <article>
-        <p class="text-inicialise texts">Descubra os Astros</p>
-        <button id="button-start">Comece Aqui!</button>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./CSS/main.css" />
+    <title>Descovery Astro</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header id="nav-bar" class="flex">
+      <article id="logo">
+        <!-- <img src="public/img/logo.png" alt="Discovery Astro - Logo"> -->
       </article>
-  </main>
+
+      <article id="buttons-nav">
+        <!-- <a class="button-nav-bar">Início</a>
+        <a class="button-nav-bar">Biblioteca</a>
+        <a class="button-nav-bar">Sobre nós</a> -->
+
+        <div class="box-1">
+          <div class="btn btn-one">
+            <span>Início</span>
+          </div>
+        </div>
+
+        <div class="box-1">
+          <div class="btn btn-one">
+            <span>Biblioteca</span>
+          </div>
+        </div>
+
+        <div class="box-1">
+          <div class="btn btn-one">
+            <span>Sobre nós</span>
+          </div>
+        </div>
 
 
+      </article>
 
-  <script type="module" src="JS/main.js"></script>
-</body>
+      <article>
+        <!-- <p>Entrar</p>
+      <i class="fa-solid fa-user"></i> -->
+      </article>
+    </header>
+
+    <main id="container-inicialize">
+      <article>
+        <p class="title-inicialise texts">Descubra os Astros</p>
+
+        <p class="text-inicialise">
+          Discovery-Astro é o portal definitivo para aqueles que desejam aprofundar sua compreensão e ampliar seus conhecimentos sobre os fascinantes planetas que circundam nosso próprio mundo.
+        </p>
+        
+        <p class="text-inicialise">
+          Aqui, convidamos você a embarcar em uma jornada cósmica, uma verdadeira odisseia de exploração e descobertas extraordinárias. 
+        </p>
+        
+        <p class="text-inicialise">
+          Ao explorar as páginas do Discovery-Astro, você se encontrará imerso em um universo de informações cativantes e deslumbrantes, projetadas para instigar sua curiosidade e despertar sua paixão pelo espaço. Nossa missão é proporcionar a você uma visão abrangente e envolvente dos corpos celestes que compartilham o cosmos conosco.
+        </p>
+        
+        <p class="text-inicialise">
+          Em nossa jornada interplanetária, você será convidado a vasculhar os recantos mais profundos e misteriosos do espaço sideral, onde segredos cósmicos aguardam ansiosamente sua descoberta.
+        </p>
+        
+        <p class="text-inicialise">
+          De Marte, com sua paisagem vermelha e intrigante, aos anéis majestosos de Saturno e os ventos furiosos de Júpiter, cada planeta oferece um mundo de maravilhas únicas. Navegue com facilidade por nossos artigos, imagens impressionantes e informações atualizadas, que lhe darão uma perspectiva mais profunda sobre as características, curiosidades e peculiaridades de cada um dos planetas em nosso sistema solar.
+        </p>
+        
+
+        <!-- <button id="button-start">Comece Aqui!</button> -->
+
+        <div class="wrapper">
+          <div class="link_wrapper">
+            <a id="button-start">Comece Aqui!</a>
+            <div class="icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 268.832 268.832">
+                <path d="M265.17 125.577l-80-80c-4.88-4.88-12.796-4.88-17.677 0-4.882 4.882-4.882 12.796 0 17.678l58.66 58.66H12.5c-6.903 0-12.5 5.598-12.5 12.5 0 6.903 5.597 12.5 12.5 12.5h213.654l-58.66 58.662c-4.88 4.882-4.88 12.796 0 17.678 2.44 2.44 5.64 3.66 8.84 3.66s6.398-1.22 8.84-3.66l79.997-80c4.883-4.882 4.883-12.796 0-17.678z"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+
+      </article>
+    </main>
+
+    <script type="module" src="JS/main.js"></script>
+  </body>
 </html>
