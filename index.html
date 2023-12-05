@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/scrollreveal"></script>
     <link rel="stylesheet" href="./CSS/main.css" />
     <title>Descovery Astro</title>
     <link
@@ -16,14 +17,10 @@
   </head>
   <body>
     <header id="nav-bar" class="flex">
-      <article id="logo">
-        <!-- <img src="public/img/logo.png" alt="Discovery Astro - Logo"> -->
-      </article>
+      
+      <article id="logo"></article>
 
       <article id="buttons-nav">
-        <!-- <a class="button-nav-bar">Início</a>
-        <a class="button-nav-bar">Biblioteca</a>
-        <a class="button-nav-bar">Sobre nós</a> -->
 
         <div class="box-1">
           <div class="btn btn-one">
@@ -43,7 +40,6 @@
           </div>
         </div>
 
-
       </article>
 
       <article>
@@ -53,8 +49,10 @@
     </header>
 
     <main id="container-welcome">
-      <p>THE ULTIMATE</p>
-      <h1>Discovery Astro</h1>
+      <div class="center-div">
+        <p class="text-1">THE ULTIMATE</p>
+        <h1 class="text-2">Discovery Astro</h1>
+      </div>
       <div id="container-next" class="container-arrow">
         <i class="fa-solid fa-chevron-right" id="arrow-next"></i>
       </div>
@@ -66,7 +64,7 @@
     </main>
 
     <main id="container-inicialize">
-      <article>
+      <!-- <article class="article-info">
         <p class="title-inicialise texts">Descubra os Astros</p>
 
         <p class="text-inicialise">
@@ -88,9 +86,6 @@
         <p class="text-inicialise">
           De Marte, com sua paisagem vermelha e intrigante, aos anéis majestosos de Saturno e os ventos furiosos de Júpiter, cada planeta oferece um mundo de maravilhas únicas. Navegue com facilidade por nossos artigos, imagens impressionantes e informações atualizadas, que lhe darão uma perspectiva mais profunda sobre as características, curiosidades e peculiaridades de cada um dos planetas em nosso sistema solar.
         </p>
-        
-
-        <!-- <button id="button-start">Comece Aqui!</button> -->
 
         <div class="wrapper">
           <div class="link_wrapper">
@@ -103,9 +98,44 @@
           </div>
         </div>
 
-      </article>
+      </article> -->
+
+      <div class="conteudo">
+        
+        <article class="cards">
+          <div id="img-card-1" class="img-card"></div>
+          <div class="infos-card">
+            <p class="title-card">Terra: Nosso Planeta Azul</p>
+            <p class="text-card">Localização: Terceiro planeta do Sistema Solar, a Terra abriga uma diversidade única de vida.</p>
+            <p class="text-card">Características: Com 70% de sua superfície coberta por água, apresenta ecossistemas variados e uma atmosfera essencial para a vida.</p>
+          </div>
+        </article>
+
+        <article class="cards">
+          <div id="img-card-2" class="img-card"></div>
+          <div class="infos-card">
+            <p class="title-card">Marte: O Planeta Vermelho</p>
+            <p class="text-card">Características: Quarto planeta do Sistema Solar, Marte é conhecido por sua coloração avermelhada e apresentações de tempestades de poeira.</p>
+            <p class="text-card">Exploração Espacial: Alvo de diversas missões espaciais, Marte é objeto de estudo para compreender a possibilidade de vida extraterrestre.</p>
+          </div>
+        </article>
+
+        <article class="cards">
+          <div id="img-card-3" class="img-card"></div>
+          <div class="infos-card">
+            <p class="title-card">Saturno: O Senhor dos Anéis</p>
+            <p class="text-card">Anéis Exuberantes: Saturno, o segundo maior planeta, é notável por seus deslumbrantes anéis que o tornam um espetáculo celestial.</p>
+            <p class="text-card">Composição Atmosférica: Sua atmosfera gasosa, predominantemente hidrogênio e hélio, oferece vislumbres intrigantes de tempestades e fenômenos climáticos.</p>
+          </div>
+        </article>
+
+
+      </div>
+
     </main>
 
     <script type="module" src="JS/main.js"></script>
+    <script type="module" src="JS/component/carrossel.js"></script>
+    
   </body>
 </html>

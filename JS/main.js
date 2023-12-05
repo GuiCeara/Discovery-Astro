@@ -1,23 +1,13 @@
-const containerPic = document.getElementById("container-welcome");
-let cont = -1;
-const lista = [
-    "../public/img/lighthouse-6785763_1920.jpg",
-    "../public/img/galaxy-11098_1920.jpg",
-    ""
-];
+// Animação de revelação 
+window.sr = ScrollReveal({ reset: true });
 
-document.getElementById("container-next").addEventListener("click", () => {
-    cont++
-    changePic(1, cont);
+sr.reveal('.text-1', { duration: 1800 });;
+sr.reveal('.text-2', { duration: 1800 });;
+sr.reveal('.title-inicialise', { 
+    rotate: { x: 0, y: 20, z:0 },
+    duration: 3000 
 });
-
-function changePic(status, cont) {
-    console.log(cont)
-    if(status == 1) {
-        if(cont <= lista.length) {
-            containerPic.style.transition = "0.5s";
-            containerPic.style.backgroundImage = `url(${lista[cont]})`;
-        }
-
-    }
-}
+sr.reveal('.text-inicialise', { 
+    rotate: { x: 0, y: 25, z:0 },
+    duration: 3000 
+});
